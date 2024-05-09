@@ -1,0 +1,16 @@
+.main-area{
+    -fx-background-image: url("../images/membership-back.jpg");
+    -fx-opacity: 0.7;
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+.notes{
+    -fx-background-radius: 4 4 4 4;
+    -fx-background-color: rgba(255,255,255,0.5);
+    -fx-text-fill: white;
+
+}
+.membership-buttons{
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}

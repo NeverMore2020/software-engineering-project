@@ -1,0 +1,6 @@
+.main-area{
+    -fx-background-image: url("../images/video_back.jpg");
+    /*-fx-background-size: 900;*/
+    -fx-background-repeat: no-repeat;
+    /*-fx-opacity: 0.8;*/
+}

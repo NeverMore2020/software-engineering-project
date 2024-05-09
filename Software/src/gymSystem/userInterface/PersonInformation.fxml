@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gymSystem.controller.afterLogin.UserController">
+   <children>
+      <Button fx:id="membershipButton" layoutX="490.0" layoutY="234.0" mnemonicParsing="false" onAction="#handleMembership" prefHeight="26.0" prefWidth="83.0" text="Membership">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="349.0" layoutY="360.0" mnemonicParsing="false" onMouseClicked="#logOut" prefHeight="26.0" prefWidth="83.0" text="Log out">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="143.0" prefHeight="46.0" prefWidth="314.0" styleClass="emphasize-text" text="Personnal  Details" AnchorPane.leftAnchor="143.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="110.0" layoutY="46.0" prefHeight="221.0" prefWidth="253.0" styleClass="space" AnchorPane.bottomAnchor="44.0" AnchorPane.leftAnchor="110.0" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="46.0">
+         <children>
+            <Label styleClass="emphasize-text" text="Nickname" />
+            <Label styleClass="emphasize-text" text="Telephone" GridPane.rowIndex="1" />
+            <Label styleClass="emphasize-text" text="Membership" GridPane.rowIndex="4" />
+            <Label fx:id="nickNameLabel" styleClass="label-bright" text="Label" GridPane.columnIndex="1" />
+            <Label fx:id="telePhoneLabel" styleClass="label-bright" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="membershipLabel" styleClass="label-bright" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label styleClass="emphasize-text" text="Email" GridPane.rowIndex="2" />
+            <Label styleClass="emphasize-text" text="Expire Date" GridPane.rowIndex="3" />
+            <Label fx:id="emailLabel" styleClass="label-bright" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="expireDateLabel" styleClass="label-bright" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label styleClass="emphasize-text" text="Birthday" GridPane.rowIndex="5" />
+            <Label fx:id="birthdayLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label styleClass="emphasize-text" text="Balance" GridPane.rowIndex="6" />
+            <Label fx:id="balanceLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Button layoutX="148.0" layoutY="360.0" mnemonicParsing="false" onAction="#handleEditPerson" prefHeight="26.0" prefWidth="83.0" text="Edit" AnchorPane.rightAnchor="368.8">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="rechargeButton" layoutX="490.0" layoutY="330.0" mnemonicParsing="false" onAction="#handleRecharge" prefHeight="26.0" prefWidth="83.0" text="Recharge">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+   <stylesheets>
+      <URL value="@../style/login-information-space.css" />
+      <URL value="@../style/button.css" />
+      <URL value="@../style/bold-text.css" />
+   </stylesheets>
+</AnchorPane>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<VBox prefHeight="600.0" prefWidth="900.0" stylesheets="@../style/button.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gymSystem.controller.afterLogin.YogaController">
+    <children>
+        <AnchorPane fx:id="firstChildAnchor" prefHeight="30.0" prefWidth="900.0" styleClass="top-bar">
+            <children>
+                <Text fx:id="title" fill="WHITE" layoutX="370.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LONDON FITNESS" textAlignment="CENTER">
+                    <font>
+                        <Font size="20.0" />
+                    </font></Text>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffbbbba1" height="30.0" layoutX="871.0" onMouseClicked="#closeApp" stroke="BLACK" strokeType="INSIDE" width="30.0">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Rectangle>
+                <Line endX="-71.99993896484375" endY="2.86102294921875E-6" layoutX="972.0" layoutY="15.0" rotate="45.0" startX="-100.0" stroke="#af0000">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Line>
+                <Line endX="-71.99993896484375" endY="2.86102294921875E-6" layoutX="972.0" layoutY="15.0" rotate="-45.0" startX="-100.0" stroke="#af0000">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Line>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="secondChildAnchor" layoutX="-1.0" layoutY="30.0" prefHeight="70.0" prefWidth="900.0" styleClass="top-bar">
+            <children>
+                <ImageView fx:id="users" fitHeight="70.0" fitWidth="70.0" layoutX="774.0" onMouseClicked="#onUserClick" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/User_image.jpeg" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ImageView>
+                <AnchorPane fx:id="videoButton" onMouseClicked="#onVideoButtonClick" onMouseEntered="#onVideoMouseEntered" onMouseExited="#onVideoMouseExited" prefHeight="70.0" prefWidth="180.0" styleClass="changeBack">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </AnchorPane>
+                <AnchorPane fx:id="liveButton" layoutX="180.0" onMouseClicked="#onLiveButtonClick" onMouseEntered="#onLiveMouseEntered" onMouseExited="#onLiveMouseExited" prefHeight="70.0" prefWidth="180.0" styleClass="changeBack">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </AnchorPane>
+                <AnchorPane fx:id="homeButton" layoutX="540.0" onMouseClicked="#onHomeButtonClick" onMouseEntered="#onHomeMouseEntered" onMouseExited="#onHomeMouseExited" prefHeight="70.0" prefWidth="180.0" styleClass="changeBack">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </AnchorPane>
+                <AnchorPane fx:id="memberButton" layoutX="360.0" onMouseClicked="#onMemberButtonClick" onMouseEntered="#onMembershipMouseEntered" onMouseExited="#onMembershipMouseExited" prefHeight="70.0" prefWidth="180.0" styleClass="changeBack">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </AnchorPane>
+                <Text fx:id="videoButtonText" layoutY="43.0" onMouseClicked="#onVideoButtonClick" onMouseEntered="#onVideoMouseEntered" onMouseExited="#onVideoMouseExited" stroke="BLACK" strokeWidth="0.0" styleClass="chooseText" text="Workout Video" textAlignment="CENTER" wrappingWidth="180.0">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Text>
+                <Text fx:id="liveButtonText" layoutX="180.0" layoutY="43.0" onMouseClicked="#onLiveButtonClick" onMouseEntered="#onLiveMouseEntered" onMouseExited="#onLiveMouseExited" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="chooseText" text="Live Training" textAlignment="CENTER" wrappingWidth="180.0">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Text>
+                <Text fx:id="memberButtonText" layoutX="360.0" layoutY="43.0" onMouseClicked="#onMemberButtonClick" onMouseEntered="#onMembershipMouseEntered" onMouseExited="#onMembershipMouseExited" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="chooseText" text="Management" textAlignment="CENTER" wrappingWidth="180.0">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Text>
+                <Text fx:id="homeButtonText" layoutX="540.0" layoutY="43.0" onMouseClicked="#onHomeButtonClick" onMouseEntered="#onHomeMouseEntered" onMouseExited="#onHomeMouseExited" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="chooseText" text="Home" textAlignment="CENTER" wrappingWidth="180.0">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Text>
+            </children>
+        </AnchorPane>
+        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="900.0">
+            <children>
+                <Hyperlink alignment="CENTER" onMouseClicked="#back" prefHeight="15.0" prefWidth="111.0" text="Workout Video" textFill="#3108e8" />
+                <Hyperlink alignment="CENTER" layoutX="116.0" layoutY="-1.0" onMouseClicked="#refresh" prefHeight="15.0" prefWidth="111.0" text="yoga" textFill="#2b00ff" />
+                <Text layoutX="106.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&gt;" wrappingWidth="10.299458503723145" />
+                <!--            <Text layoutX="283.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO ****** GYM" textAlignment="CENTER" wrappingWidth="334.1368103027344">-->
+                <!--               <font>-->
+                <!--                  <Font size="26.0" />-->
+                <!--               </font>-->
+                <!--            </Text>-->
+            </children>
+        </AnchorPane>
+        <Pane fx:id="buttonPane" prefHeight="30.0" prefWidth="900.0">
+            <children>
+                <Text layoutX="14.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exercise Intensity :" />
+                <ButtonBar layoutX="120.0" layoutY="-6.0" prefHeight="40.0" prefWidth="200.0">
+                    <buttons>
+                        <Button fx:id="level1" mnemonicParsing="false" onMouseClicked="#select1" text="Level 1" />
+                        <Button fx:id="level2" mnemonicParsing="false" onMouseClicked="#select2" text="Level 2" />
+                        <Button fx:id="level3" mnemonicParsing="false" onMouseClicked="#select3" text="Level 3" />
+                    </buttons>
+                </ButtonBar>
+            </children>
+        </Pane>
+        <AnchorPane fx:id="addVideo" prefHeight="450.0" prefWidth="900.0">
+            <children>
+            </children>
+
+        </AnchorPane>
+    </children>
+</VBox>

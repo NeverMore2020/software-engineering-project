@@ -1,0 +1,296 @@
+{
+  "1": [
+    {
+      "timeSlotList": [
+        {
+          "duration": "9:00-10:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "10:00-11:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "15:00-16:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "16:00-17:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "18:00-19:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "19:00-20:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "20:00-21:00",
+          "bookingFlag": true
+        }
+      ]
+    },
+    {
+      "timeSlotList": [
+        {
+          "duration": "9:00-10:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "10:00-11:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "15:00-16:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "16:00-17:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "18:00-19:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "19:00-20:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "20:00-21:00",
+          "bookingFlag": true
+        }
+      ]
+    },
+    {
+      "timeSlotList": [
+        {
+          "duration": "9:00-10:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "10:00-11:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "15:00-16:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "16:00-17:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "18:00-19:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "19:00-20:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "20:00-21:00",
+          "bookingFlag": true
+        }
+      ]
+    }
+  ],
+  "2": [
+    {
+      "timeSlotList": [
+        {
+          "duration": "9:00-10:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "10:00-11:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "15:00-16:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "16:00-17:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "18:00-19:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "19:00-20:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "20:00-21:00",
+          "bookingFlag": true
+        }
+      ]
+    },
+    {
+      "timeSlotList": [
+        {
+          "duration": "9:00-10:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "10:00-11:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "15:00-16:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "16:00-17:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "18:00-19:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "19:00-20:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "20:00-21:00",
+          "bookingFlag": true
+        }
+      ]
+    },
+    {
+      "timeSlotList": [
+        {
+          "duration": "9:00-10:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "10:00-11:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "15:00-16:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "16:00-17:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "18:00-19:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "19:00-20:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "20:00-21:00",
+          "bookingFlag": true
+        }
+      ]
+    }
+  ],
+  "3": [
+    {
+      "timeSlotList": [
+        {
+          "duration": "9:00-10:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "10:00-11:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "15:00-16:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "16:00-17:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "18:00-19:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "19:00-20:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "20:00-21:00",
+          "bookingFlag": true
+        }
+      ]
+    },
+    {
+      "timeSlotList": [
+        {
+          "duration": "9:00-10:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "10:00-11:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "15:00-16:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "16:00-17:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "18:00-19:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "19:00-20:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "20:00-21:00",
+          "bookingFlag": true
+        }
+      ]
+    },
+    {
+      "timeSlotList": [
+        {
+          "duration": "9:00-10:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "10:00-11:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "15:00-16:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "16:00-17:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "18:00-19:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "19:00-20:00",
+          "bookingFlag": true
+        },
+        {
+          "duration": "20:00-21:00",
+          "bookingFlag": true
+        }
+      ]
+    }
+  ]
+}

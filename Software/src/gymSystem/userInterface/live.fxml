@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" stylesheets="@../style/button.css, @../style/live.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gymSystem.controller.afterLogin.LiveController">
+    <children>
+        <AnchorPane fx:id="firstChildAnchor" prefHeight="30.0" prefWidth="1200.0" styleClass="top-bar">
+            <children>
+                <Text fx:id="title" fill="WHITE" layoutX="520.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LONDON FITNESS" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font></Text>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffbbbba1" height="30.0" layoutX="1169.0" onMouseClicked="#closeApp" stroke="BLACK" strokeType="INSIDE" width="30.0">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Rectangle>
+                <Line endX="-71.99993896484375" endY="2.86102294921875E-6" layoutX="1270.0" layoutY="15.0" rotate="45.0" startX="-100.0" stroke="#af0000">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Line>
+                <Line endX="-71.99993896484375" endY="2.86102294921875E-6" layoutX="1270.0" layoutY="15.0" rotate="-45.0" startX="-100.0" stroke="#af0000">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Line>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="secondChildAnchor" layoutY="30.0" prefHeight="70.0" prefWidth="1200.0" styleClass="top-bar">
+            <children>
+                <ImageView fx:id="users" fitHeight="70.0" fitWidth="67.0" layoutX="1045.0" layoutY="2.0" onMouseClicked="#onUserClick" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/User_image.jpeg" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ImageView>
+                <AnchorPane fx:id="videoButton" onMouseClicked="#onVideoButtonClick" onMouseEntered="#onVideoMouseEntered" onMouseExited="#onVideoMouseExited" prefHeight="70.0" prefWidth="240.0" styleClass="changeBack">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </AnchorPane>
+                <AnchorPane fx:id="liveButton" layoutX="240.0" onMouseClicked="#onLiveButtonClick" onMouseEntered="#onLiveMouseEntered" onMouseExited="#onLiveMouseExited" prefHeight="70.0" prefWidth="240.0" styleClass="changeBack">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </AnchorPane>
+                <AnchorPane fx:id="homeButton" layoutX="720.0" onMouseClicked="#onHomeButtonClick" onMouseEntered="#onHomeMouseEntered" onMouseExited="#onHomeMouseExited" prefHeight="70.0" prefWidth="240.0" styleClass="changeBack">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </AnchorPane>
+                <AnchorPane fx:id="memberButton" layoutX="480.0" onMouseClicked="#onMemberButtonClick" onMouseEntered="#onMembershipMouseEntered" onMouseExited="#onMembershipMouseExited" prefHeight="70.0" prefWidth="242.0" styleClass="changeBack">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </AnchorPane>
+                <Text fx:id="videoButtonText" layoutY="43.0" onMouseClicked="#onVideoButtonClick" onMouseEntered="#onVideoMouseEntered" onMouseExited="#onVideoMouseExited" stroke="BLACK" strokeWidth="0.0" styleClass="chooseText" text="Workout Video" textAlignment="CENTER" wrappingWidth="240.0">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Text>
+                <Text fx:id="liveButtonText" layoutX="240.0" layoutY="43.0" onMouseClicked="#onLiveButtonClick" onMouseEntered="#onLiveMouseEntered" onMouseExited="#onLiveMouseExited" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="chooseText" text="Live Training" textAlignment="CENTER" wrappingWidth="240.0">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Text>
+                <Text fx:id="memberButtonText" layoutX="480.0" layoutY="43.0" onMouseClicked="#onMemberButtonClick" onMouseEntered="#onMembershipMouseEntered" onMouseExited="#onMembershipMouseExited" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="chooseText" text="Management" textAlignment="CENTER" wrappingWidth="240.0">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Text>
+                <Text fx:id="homeButtonText" layoutX="720.0" layoutY="43.0" onMouseClicked="#onHomeButtonClick" onMouseEntered="#onHomeMouseEntered" onMouseExited="#onHomeMouseExited" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="chooseText" text="Home" textAlignment="CENTER" wrappingWidth="240.0">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Text>
+            </children>
+        </AnchorPane>
+        <AnchorPane id="main-area" fx:id="bookingPane" layoutY="100.0" prefHeight="500.0" prefWidth="1200.0">
+         <children>
+            <ListView fx:id="timeList" layoutX="81.0" layoutY="77.0" prefHeight="244.0" prefWidth="370.0" style="-fx-background-color: lightgrey;" visible="false" />
+            <AnchorPane fx:id="trainerInfoBoard" layoutX="505.0" layoutY="129.0" prefHeight="298.0" prefWidth="266.0" styleClass="trainer-info">
+               <children>
+                  <Label layoutX="105.0" layoutY="34.0" text="RealName:" />
+                  <Text fx:id="realNameText" layoutX="122.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                  <Label layoutX="88.0" layoutY="113.0" text="Brief Description:" />
+                  <Text fx:id="introductionText" layoutX="54.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111" wrappingWidth="179.99999999999994" />
+               </children></AnchorPane>
+            <Polygon fx:id="nextButton" layoutX="874.0" layoutY="430.0" onMouseClicked="#NextButtonClicked" points="-50.0, 40.0, 50.0, 40.0, 1.79998779296875, 8.0" rotate="90.0" scaleX="0.5" stroke="BLACK" strokeType="INSIDE" visible="false" AnchorPane.rightAnchor="300.0" />
+            <Polygon fx:id="formerButton" layoutX="268.0" layoutY="420.0" onMouseClicked="#formerButtonClicked" points="-50.0, 40.0, 50.0, 40.0, 1.79998779296875, 8.0" rotate="-90.0" scaleX="0.5" stroke="BLACK" strokeType="INSIDE" visible="false" AnchorPane.leftAnchor="300.0" />
+            <Text fx:id="pageSign" fill="WHITE" layoutX="584.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1/3">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <Polygon fx:id="nextDayButton" fill="WHITE" layoutX="435.0" layoutY="90.0" onMouseClicked="#goToNextDay" points="-50.0, 40.0, 50.0, 40.0, 1.79998779296875, 8.0" rotate="90.0" scaleX="0.25" stroke="#9a0000" strokeType="INSIDE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Polygon>
+            <Polygon fx:id="formerDayButton" fill="WHITE" layoutX="97.0" layoutY="90.0" onMouseClicked="#goToFormerDay" points="-50.0, 40.0, 50.0, 40.0, 1.79998779296875, 8.0" rotate="-90.0" scaleX="0.25" stroke="#9a0000" strokeType="INSIDE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Polygon>
+            <Text fx:id="lastDayText" fill="WHITE" layoutX="122.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="last day" wrappingWidth="52.79998779296869" />
+            <Text fx:id="nextDayText" fill="WHITE" layoutX="361.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="next day" wrappingWidth="52.79998779296869" />
+            <Text fx:id="dateText" layoutX="254.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            <Button fx:id="bookButton" defaultButton="true" layoutX="83.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#onBookButtonClicked" prefHeight="26.0" prefWidth="370.0" styleClass="live-buttons" text="Book" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TableView fx:id="timeTable" fixedCellSize="2.0" layoutX="80.0" layoutY="140.0" prefHeight="230.0" prefWidth="370.0" styleClass="trainer-info">
+              <columns>
+                <TableColumn fx:id="tableDuration" editable="false" prefWidth="75.0" sortable="false" text="Time" />
+                <TableColumn fx:id="tableFlag" editable="false" prefWidth="75.0" sortable="false" text="Flag" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+<!--               <columnResizePolicy>-->
+<!--                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />-->
+<!--               </columnResizePolicy>-->
+            </TableView>
+            <TableView fx:id="myBookedTime" fixedCellSize="3.0" layoutX="793.0" layoutY="140.0" prefHeight="230.0" prefWidth="370.0" styleClass="trainer-info">
+               <columns>
+                  <TableColumn fx:id="bookedDate" prefWidth="75.0" text="Date" />
+                  <TableColumn fx:id="bookedTime" editable="false" prefWidth="75.0" sortable="false" text="Time" />
+                  <TableColumn fx:id="bookedTrainer" prefWidth="75.0" text="Trainer" />
+               </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+            <Button fx:id="deleteButton" defaultButton="true" layoutX="793.0" layoutY="400.0" mnemonicParsing="false" onMouseClicked="#onDeleteButtonClicked" prefHeight="26.0" prefWidth="370.0" styleClass="live-buttons" text="Delete" textAlignment="CENTER">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <StackPane layoutX="83.0" layoutY="70.0" prefHeight="32.0" prefWidth="370.0" styleClass="table-title">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Booking TimeTable" textAlignment="CENTER" wrappingWidth="305.08282470703125">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane layoutX="793.0" layoutY="98.0" prefHeight="32.0" prefWidth="370.0" styleClass="table-title">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="My booking" textAlignment="CENTER" wrappingWidth="126.03697967529297">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+            <StackPane layoutX="505.0" layoutY="82.0" prefHeight="32.0" prefWidth="266.0" styleClass="table-title">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Trainner information" textAlignment="CENTER">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Text>
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

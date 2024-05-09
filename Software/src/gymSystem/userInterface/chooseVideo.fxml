@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gymSystem.controller.afterLogin.VideoController">
+    <children>
+        <AnchorPane prefHeight="33.0" prefWidth="900.0" style="-fx-background-color: #eeecec;">
+            <children>
+                <Text layoutX="439.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GYM" />
+            </children>
+        </AnchorPane>
+        <HBox prefHeight="45.0" prefWidth="900.0">
+            <children>
+                <ButtonBar maxWidth="-Infinity" opacity="0.81" prefHeight="159.0" prefWidth="655.0" style="-fx-background-color: #feffff;">
+                    <buttons>
+                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="78.0" prefWidth="967.0" text="Workout Video" />
+                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="100.0" prefWidth="967.0" text="Live Training" />
+                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="100.0" prefWidth="967.0" text="Management" />
+                        <Button alignment="CENTER" mnemonicParsing="false" prefHeight="100.0" prefWidth="967.0" text="Home" />
+                    </buttons>
+                    <padding>
+                        <Insets right="10.0" />
+                    </padding>
+                </ButtonBar>
+            </children>
+        </HBox>
+        <AnchorPane prefHeight="28.0" prefWidth="900.0">
+            <children>
+                <Hyperlink alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="15.0" prefWidth="111.0" text="Workout Video" textFill="#3108e8" underline="true" />
+                <!--            <Text layoutX="283.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO ****** GYM" textAlignment="CENTER" wrappingWidth="334.1368103027344">-->
+                <!--               <font>-->
+                <!--                  <Font size="26.0" />-->
+                <!--               </font>-->
+                <!--            </Text>-->
+            </children>
+        </AnchorPane>
+        <TabPane prefHeight="469.0" prefWidth="900.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Level 1">
+                    <content>
+                        <ScrollPane prefHeight="372.0" prefWidth="803.0">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="426.0" prefWidth="901.0" />
+                            </content>
+                        </ScrollPane>
+                    </content>
+                </Tab>
+            <Tab text="Level 2">
+               <content>
+                  <ScrollPane prefHeight="372.0" prefWidth="803.0">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="426.0" prefWidth="901.0" />
+                     </content>
+                  </ScrollPane>
+               </content>
+            </Tab>
+            <Tab text="Level 3">
+               <content>
+                  <ScrollPane prefHeight="372.0" prefWidth="803.0">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="426.0" prefWidth="901.0" />
+                     </content>
+                  </ScrollPane>
+               </content>
+            </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</VBox>

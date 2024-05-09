@@ -1,0 +1,24 @@
+.space{
+    -fx-pref-width: 80%;
+}
+.board{
+    -fx-min-width: 450;
+    -fx-min-height: 400;
+}
+#successHint{
+    -fx-text-fill: green;
+}
+#failedHint{
+    -fx-text-fill: red;
+}
+.switch-login-button{
+    -fx-background-color: #ffffff;
+    -fx-opacity: 0.85;
+
+    -fx-background-radius: 4 4 4 4;
+    -fx-fill: black;
+}
+.switch-login-text{
+    -fx-font-weight: bold;
+
+}

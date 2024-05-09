@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootAnchor" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gymSystem.controller.afterLogin.VideoController">
+    <children>
+        <AnchorPane fx:id="firstChildAnchor" prefHeight="30.0" prefWidth="900.0" styleClass="top-bar">
+            <children>
+                <Text fx:id="title" fill="WHITE" layoutX="370.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LONDON FITNESS" textAlignment="CENTER">
+                    <font>
+                        <Font size="20.0" />
+                    </font></Text>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffbbbba1" height="30.0" layoutX="869.0" onMouseClicked="#closeApp" stroke="BLACK" strokeType="INSIDE" width="30.0">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Rectangle>
+                <Line endX="-71.99993896484375" endY="2.86102294921875E-6" layoutX="970.0" layoutY="15.0" rotate="45.0" startX="-100.0" stroke="#af0000">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Line>
+                <Line endX="-71.99993896484375" endY="2.86102294921875E-6" layoutX="970.0" layoutY="15.0" rotate="-45.0" startX="-100.0" stroke="#af0000">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Line>  </children>
+        </AnchorPane>
+        <AnchorPane fx:id="secondChildAnchor" layoutY="30.0" prefHeight="70.0" prefWidth="900.0" styleClass="top-bar">
+            <children>
+                <ImageView fx:id="users" fitHeight="70.0" fitWidth="70.0" layoutX="774.0" onMouseClicked="#onUserClick" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../images/User_image.jpeg" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ImageView>
+                <AnchorPane fx:id="videoButton" onMouseClicked="#onVideoButtonClick" onMouseEntered="#onVideoMouseEntered" onMouseExited="#onVideoMouseExited" prefHeight="70.0" prefWidth="180.0" styleClass="changeBack">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </AnchorPane>
+                <AnchorPane fx:id="liveButton" layoutX="180.0" onMouseClicked="#onLiveButtonClick" onMouseEntered="#onLiveMouseEntered" onMouseExited="#onLiveMouseExited" prefHeight="70.0" prefWidth="180.0" styleClass="changeBack">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </AnchorPane>
+                <AnchorPane fx:id="homeButton" layoutX="540.0" onMouseClicked="#onHomeButtonClick" onMouseEntered="#onHomeMouseEntered" onMouseExited="#onHomeMouseExited" prefHeight="70.0" prefWidth="180.0" styleClass="changeBack">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </AnchorPane>
+                <AnchorPane fx:id="memberButton" layoutX="360.0" onMouseClicked="#onMemberButtonClick" onMouseEntered="#onMembershipMouseEntered" onMouseExited="#onMembershipMouseExited" prefHeight="70.0" prefWidth="180.0" styleClass="changeBack">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </AnchorPane>
+                <Text fx:id="videoButtonText" layoutY="43.0" onMouseClicked="#onVideoButtonClick" onMouseEntered="#onVideoMouseEntered" onMouseExited="#onVideoMouseExited" stroke="BLACK" strokeWidth="0.0" styleClass="chooseText" text="Workout Video" textAlignment="CENTER" wrappingWidth="180.0">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Text>
+                <Text fx:id="liveButtonText" layoutX="180.0" layoutY="43.0" onMouseClicked="#onLiveButtonClick" onMouseEntered="#onLiveMouseEntered" onMouseExited="#onLiveMouseExited" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="chooseText" text="Live Training" textAlignment="CENTER" wrappingWidth="180.0">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Text>
+                <Text fx:id="memberButtonText" layoutX="360.0" layoutY="43.0" onMouseClicked="#onMemberButtonClick" onMouseEntered="#onMembershipMouseEntered" onMouseExited="#onMembershipMouseExited" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="chooseText" text="Management" textAlignment="CENTER" wrappingWidth="180.0">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Text>
+                <Text fx:id="homeButtonText" layoutX="540.0" layoutY="43.0" onMouseClicked="#onHomeButtonClick" onMouseEntered="#onHomeMouseEntered" onMouseExited="#onHomeMouseExited" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="chooseText" text="Home" textAlignment="CENTER" wrappingWidth="180.0">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Text>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutY="100.0" minHeight="0.0" minWidth="0.0" opacity="0.77" prefHeight="500.0" prefWidth="900.0" styleClass="main-area">
+            <children>
+                <SplitPane fx:id="pane1" layoutX="177.0" layoutY="132.0" opacity="0.7" prefHeight="268.0" prefWidth="193.0" style="-fx-background-radius: 5; -fx-border-style: solid; -fx-border-width: 2; -fx-border-color: #c0c0c0; -fx-border-radius: 5;" AnchorPane.leftAnchor="100.0">
+                    <items>
+                        <Label fx:id="image1" prefHeight="363.0" prefWidth="187.0" styleClass="emphasize-text" text="With the help of dumbbells and fitness equipment  strengthen their own strength, increase muscle circumference and shape a variety of exercises, the purpose is to change their own muscle shape, enhance muscle endurance" textAlignment="JUSTIFY" wrapText="true" />
+                    </items></SplitPane>
+                <SplitPane layoutX="562.0" layoutY="132.0" opacity="0.7" prefHeight="268.0" prefWidth="200.0" style="-fx-background-radius: 10; -fx-border-image-width: 3;  -fx-border-style: solid; -fx-border-color: #c0c0c0;" AnchorPane.rightAnchor="100.0">
+                    <items>
+                        <Label fx:id="image3" prefHeight="383.0" prefWidth="196.0" style="-fx-text-fill: black; -fx-font-weight: bold;" text="Combining high intensity with intermittence can lead to excessive oxygen consumption after exercise, which speeds up your metabolic rate. Your metabolic rate can increase within 48 hours of completing a full HIIT workout." textAlignment="JUSTIFY" wrapText="true" />
+                    </items></SplitPane>
+                <Button fx:id="strength" layoutX="103.0" layoutY="88.0" mnemonicParsing="false" onMouseClicked="#onStrengthButtonClick" opacity="0.7" prefHeight="43.0" prefWidth="187.0" styleClass="emphasize-text" text="Strength" AnchorPane.leftAnchor="103.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+                <Button fx:id="yoga" layoutX="354.0" layoutY="88.0" mnemonicParsing="false" onMouseClicked="#onyogaButtonClick" opacity="0.7" prefHeight="43.0" prefWidth="193.0" styleClass="emphasize-text" text="Yoga">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+                <Button fx:id="hiit" layoutX="562.0" layoutY="88.0" mnemonicParsing="false" onMouseClicked="#onHIITButtonClick" opacity="0.7" prefHeight="43.0" prefWidth="200.0" styleClass="emphasize-text" text="HIIT" AnchorPane.rightAnchor="100.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+                <SplitPane fx:id="pane2" layoutX="351.0" layoutY="132.0" opacity="0.7" prefHeight="268.0" prefWidth="200.0" style="-fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: #c0c0c0; -fx-border-style: solid; -fx-border-width: 3;">
+                    <items>
+                        <Label fx:id="image2" prefHeight="361.0" prefWidth="192.0" style="-fx-text-fill: black; -fx-font-weight: bold;" text="Yoga poses use ancient and easy-to-master techniques, including asanas, breathing, and meditation, to achieve the unity of body and mind." textAlignment="JUSTIFY" wrapText="true" />
+                    </items>
+                </SplitPane>
+                <Hyperlink layoutX="14.0" layoutY="14.0" text="Workout Video" textFill="WHITE" />
+            </children>
+        </AnchorPane>
+
+    </children>
+   <stylesheets>
+      <URL value="@../style/button.css" />
+      <URL value="@../style/bold-text.css" />
+      <URL value="@../style/video.css" />
+   </stylesheets>
+</AnchorPane>

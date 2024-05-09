@@ -1,0 +1,66 @@
+#videoButton{
+
+    /*-fx-border-color: #ffffff;*/
+    background-color: transparent;
+    outline: none;
+}
+
+.button {
+    /*-fx-skin: "com.sun.javafx.scene.control.skin.ButtonSkin";*/
+    -fx-background-color: #000000;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 5, 5, 4, 3;
+    -fx-text-fill: white;
+}
+
+.button:focused {
+    /*-fx-color: -fx-focused-base;*/
+    /*-fx-focus-color: transparent;*/
+    /*-fx-faint-focus-color: transparent;*/
+    /*-fx-background-insets: -1.4, 0, 1, 2;*/
+    -fx-background-radius:  5, 5, 4, 3;
+}
+
+.button:hover{
+
+}
+.chooseText{
+    -fx-fill: #000000;
+    -fx-font-size: 20px;
+    /*-fx-wrap-text: 180px;*/
+
+}
+.changeBack{
+    -fx-background-color: linear-gradient(to right, reflect, #a40000, #ffffff, #a40000);
+
+}
+/*.playCircle {*/
+/*.playCircle {*/
+/*    -fx-fill: red;*/
+/*    animation:changeBG 10s;*/
+/*    animation-iteration-count: infinite;*/
+/*    radius: 100%;*/
+/*}*/
+/*@keyframes changeBG{*/
+/*    0% {-fx-fill: red;}*/
+/*    25% {-fx-fill: yellow;}*/
+/*    50% {-fx-fill: blue;}*/
+/*    100% {-fx-fill: red;}*/
+/*}*/
+/*#image1{*/
+/*    -fx-background-image: url("../images/strength.jpg");*/
+/*}*/
+
+/*#image2{*/
+/*    -fx-background-image: url("../images/yoga3.jpg");*/
+/*}*/
+
+/*#image3{*/
+/*    -fx-background-image: url("../images/hiit.png");*/
+/*}*/
+
+
+.top-bar{
+    -fx-background-color: linear-gradient(from 0% 0% to 20% 0%, reflect,#000000,#ac0000, #000000);
+
+}

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<AnchorPane fx:id="rootAnchor" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gymSystem.controller.afterLogin.VideoManageController">
+    <children>
+        <ImageView disable="true" fitHeight="500.0" fitWidth="900.0" layoutY="100.0" pickOnBounds="true">
+            <image>
+                <Image url="@../images/membership-back.jpg" />
+            </image>
+        </ImageView>
+        <AnchorPane fx:id="firstChildAnchor" prefHeight="30.0" prefWidth="900.0" styleClass="top-bar">
+            <children>
+                <Text fx:id="title" fill="WHITE" layoutX="370.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LONDON FITNESS" textAlignment="CENTER">
+                    <font>
+                        <Font size="20.0" />
+                    </font></Text>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffbbbba1" height="30.0" layoutX="871.0" onMouseClicked="#closeApp" stroke="BLACK" strokeType="INSIDE" width="30.0">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Rectangle>
+                <Line endX="-71.99993896484375" endY="2.86102294921875E-6" layoutX="972.0" layoutY="15.0" rotate="45.0" startX="-100.0" stroke="#af0000">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Line>
+                <Line endX="-71.99993896484375" endY="2.86102294921875E-6" layoutX="972.0" layoutY="15.0" rotate="-45.0" startX="-100.0" stroke="#af0000">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Line>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="secondChildAnchor" layoutY="30.0" prefHeight="70.0" prefWidth="900.0" styleClass="top-bar">
+            <children>
+                <ImageView fx:id="users" fitHeight="70.0" fitWidth="70.0" layoutX="774.0" onMouseClicked="#onUserClick" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/User_image.jpeg" />
+                    </image>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ImageView>
+                <AnchorPane fx:id="videoButton" onMouseClicked="#onVideoButtonClick" onMouseEntered="#onVideoMouseEntered" onMouseExited="#onVideoMouseExited" prefHeight="70.0" prefWidth="180.0" styleClass="changeBack">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </AnchorPane>
+                <AnchorPane fx:id="liveButton" layoutX="180.0" onMouseClicked="#onLiveButtonClick" onMouseEntered="#onLiveMouseEntered" onMouseExited="#onLiveMouseExited" prefHeight="70.0" prefWidth="180.0" styleClass="changeBack">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </AnchorPane>
+                <AnchorPane fx:id="homeButton" layoutX="540.0" onMouseClicked="#onHomeButtonClick" onMouseEntered="#onHomeMouseEntered" onMouseExited="#onHomeMouseExited" prefHeight="70.0" prefWidth="180.0" styleClass="changeBack">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </AnchorPane>
+                <AnchorPane fx:id="memberButton" layoutX="360.0" onMouseClicked="#onMemberButtonClick" onMouseEntered="#onMembershipMouseEntered" onMouseExited="#onMembershipMouseExited" prefHeight="70.0" prefWidth="180.0" styleClass="changeBack">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </AnchorPane>
+                <Text fx:id="videoButtonText" layoutY="43.0" onMouseClicked="#onVideoButtonClick" onMouseEntered="#onVideoMouseEntered" onMouseExited="#onVideoMouseExited" stroke="BLACK" strokeWidth="0.0" styleClass="chooseText" text="Workout Video" textAlignment="CENTER" wrappingWidth="180.0">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Text>
+                <Text fx:id="liveButtonText" layoutX="180.0" layoutY="43.0" onMouseClicked="#onLiveButtonClick" onMouseEntered="#onLiveMouseEntered" onMouseExited="#onLiveMouseExited" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="chooseText" text="Live Training" textAlignment="CENTER" wrappingWidth="180.0">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Text>
+                <Text fx:id="memberButtonText" layoutX="360.0" layoutY="43.0" onMouseClicked="#onMemberButtonClick" onMouseEntered="#onMembershipMouseEntered" onMouseExited="#onMembershipMouseExited" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="chooseText" text="Management" textAlignment="CENTER" wrappingWidth="180.0">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Text>
+                <Text fx:id="homeButtonText" layoutX="540.0" layoutY="43.0" onMouseClicked="#onHomeButtonClick" onMouseEntered="#onHomeMouseEntered" onMouseExited="#onHomeMouseExited" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="chooseText" text="Home" textAlignment="CENTER" wrappingWidth="180.0">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Text>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutY="100.0" prefHeight="40.0" prefWidth="900.0">
+            <children>
+                <Hyperlink alignment="CENTER" layoutY="7.0" onMouseClicked="#ManagerLinkClick" prefHeight="28.0" prefWidth="121.0" text="Manager's Home" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Hyperlink>
+                <Hyperlink alignment="CENTER" layoutX="788.0" layoutY="7.0" onMouseClicked="#VideoManageLinkClick" prefHeight="15.0" prefWidth="111.0" text="Video Manage" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Hyperlink>
+            <Text fill="WHITE" layoutX="196.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter the video ID：">
+               <font>
+                  <Font size="14.0" />
+               </font></Text>
+            <TextField fx:id="content" layoutX="321.0" layoutY="7.0" opacity="0.83" />
+            <Button fx:id="add" layoutX="484.0" layoutY="8.0" mnemonicParsing="false" onMouseClicked="#addButtonClick" styleClass="membership-buttons" text="Add" textAlignment="CENTER" />
+            <Button fx:id="remove" layoutX="536.0" layoutY="7.0" mnemonicParsing="false" onMouseClicked="#removeButtonClick" opacity="0.87" styleClass="membership-buttons" text="Remove" textAlignment="CENTER" />
+                <!--            <Text layoutX="283.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO ****** GYM" textAlignment="CENTER" wrappingWidth="334.1368103027344">-->
+                <!--               <font>-->
+                <!--                  <Font size="26.0" />-->
+                <!--               </font>-->
+                <!--            </Text>-->
+            </children>
+        </AnchorPane>
+        <TabPane layoutY="140.0" opacity="0.5" prefHeight="460.0" prefWidth="900.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Added Videos">
+                    <content>
+                        <ScrollPane prefHeight="372.0" prefWidth="803.0">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="426.0" prefWidth="900.0">
+                                    <children>
+                                        <TableView fx:id="a_videos" prefHeight="420.0" prefWidth="900.0">
+                                            <columns>
+                                                <TableColumn fx:id="a_vID" prefWidth="130.0" text="Video ID" />
+                                                <TableColumn fx:id="a_type" prefWidth="130.0" text="Video Type" />
+                                                <TableColumn fx:id="a_level" prefWidth="130.0" text="Level" />
+                                                <TableColumn fx:id="a_description" prefWidth="283.2000427246094" text="Video Description" />
+                                                <TableColumn fx:id="a_status" minWidth="0.0" prefWidth="101.60003662109375" text="Status" />
+                                            </columns>
+                                        </TableView>
+                                    </children>
+                        </AnchorPane>
+                            </content>
+                        </ScrollPane>
+                    </content>
+                </Tab>
+                <Tab text="Videos to be added">
+                    <content>
+                        <ScrollPane prefHeight="403.0" prefWidth="900.0">
+                            <content>
+                                <TableView fx:id="w_videos" prefHeight="440.0" prefWidth="900.0">
+                                    <columns>
+                              <TableColumn fx:id="w_vID" prefWidth="130.0" text="Video ID" />
+                              <TableColumn fx:id="w_type" prefWidth="130.0" text="Video Type" />
+                              <TableColumn fx:id="w_level" prefWidth="130.0" text="Level" />
+                              <TableColumn fx:id="w_description" prefWidth="130.0" text="Video Link" />
+                              <TableColumn fx:id="w_status" prefWidth="130.0" text="Status" />
+                                    </columns>
+                                </TableView>
+                            </content>
+                  </ScrollPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+   <stylesheets>
+      <URL value="@../style/button.css" />
+      <URL value="@../style/main-area-style1.css" />
+   </stylesheets>
+</AnchorPane>

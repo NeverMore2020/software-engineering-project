@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="450.0" styleClass="board" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gymSystem.controller.beforeLogin.LoginController">
+    <children>
+      <AnchorPane layoutX="-1.0" prefHeight="80.0" prefWidth="450.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="WHITE" layoutX="91.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign in to London Fitness" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <StackPane fx:id="userLogin" layoutX="36.0" layoutY="54.0" onMouseClicked="#userLoginClicked" prefHeight="26.0" prefWidth="110.0" styleClass="switch-login-button" AnchorPane.leftAnchor="50.0">
+               <children>
+                  <Text fx:id="userLoginText" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="switch-login-text" text="User Login" textAlignment="CENTER" wrappingWidth="110.0" />
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </StackPane>
+            <StackPane fx:id="trainerLogin" layoutX="169.0" layoutY="54.0" onMouseClicked="#trainerLoginClicked" prefHeight="26.0" prefWidth="110.0" styleClass="switch-login-button" AnchorPane.leftAnchor="170.0">
+               <children>
+                  <Text fx:id="trainerLoginText" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="switch-login-text" text="Trainer Login" textAlignment="CENTER" wrappingWidth="110.0" />
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </StackPane>
+            <StackPane fx:id="managerLogin" layoutX="300.0" layoutY="54.0" onMouseClicked="#ManagerLoginClicked" prefHeight="26.0" prefWidth="110.0" styleClass="switch-login-button" AnchorPane.leftAnchor="290.0">
+               <children>
+                  <Text fx:id="managerLoginText" strokeType="OUTSIDE" strokeWidth="2.0" styleClass="switch-login-text" text="Manager Login" textAlignment="CENTER" wrappingWidth="110.0" />
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </StackPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="69.0" layoutY="88.0" opacity="0.85" prefHeight="180.0" prefWidth="350.0" styleClass="space" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="80.0">
+         <children>
+              <Label layoutX="43.0" layoutY="30.0" styleClass="emphasize-text" text="Your ID:" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="30.0" />
+              <Label layoutX="47.0" layoutY="80.0" styleClass="emphasize-text" text="Password:" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="80.0" />
+              <TextField fx:id="login_id" layoutX="124.0" layoutY="26.0" prefHeight="26.0" prefWidth="186.0" promptText="ID" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="26.0" />
+              <Button fx:id="login_button" layoutX="56.0" layoutY="131.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="220.0" text="Sign in" AnchorPane.bottomAnchor="14.800000000000011" AnchorPane.leftAnchor="56.0" AnchorPane.rightAnchor="56.0" AnchorPane.topAnchor="131.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <PasswordField fx:id="login_password" layoutX="123.0" layoutY="77.0" prefHeight="26.0" prefWidth="186.0" promptText="Password" />
+            <Text id="successHint" fx:id="loginSucceedHint" fill="LIME" layoutX="50.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text" textAlignment="CENTER" visible="false" wrappingWidth="256.0" />
+            <Text id="failedHint" fx:id="LoginFailedHint" fill="RED" layoutX="50.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" visible="false" wrappingWidth="256.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="50.0" layoutY="270.0" opacity="0.85" prefHeight="50.0" prefWidth="351.0" styleClass="space" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="270.0">
+         <children>
+            <Text layoutX="50.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New to London Fitness?" wrappingWidth="132.32574462890625" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="167.67425537109375" />
+            <Hyperlink fx:id="createAccount" alignment="CENTER" layoutX="191.0" layoutY="12.0" onMouseClicked="#onCreateClicked" prefHeight="25.0" prefWidth="113.0" text="Create an acount" AnchorPane.leftAnchor="191.0" AnchorPane.rightAnchor="50.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="50.0" layoutY="330.0" opacity="0.85" prefHeight="50.0" prefWidth="350.0" styleClass="space" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="330.0">
+         <children>
+            <Text layoutX="50.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Forgot password?" AnchorPane.leftAnchor="50.0" />
+            <Hyperlink fx:id="resetLink" alignment="CENTER" layoutX="190.0" layoutY="13.0" onMouseClicked="#onResetClicked" prefHeight="23.0" prefWidth="115.0" text="Click here to reset" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="13.0" />
+         </children>
+      </AnchorPane>
+    </children>
+   <stylesheets>
+      <URL value="@../style/login.css" />
+      <URL value="@../style/login-information-space.css" />
+      <URL value="@../style/bold-text.css" />
+   </stylesheets>
+</AnchorPane>

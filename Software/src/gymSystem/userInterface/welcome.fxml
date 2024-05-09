@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootAnchor" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-border-color: black;" stylesheets="@../style/button.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gymSystem.controller.afterLogin.WelcomeController">
+   <children>
+      <AnchorPane fx:id="firstChildAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="900.0" styleClass="top-bar">
+         <children>
+            <Text fx:id="title" fill="WHITE" layoutX="370.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LONDON FITNESS" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font></Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffbbbba1" height="30.0" layoutX="871.0" onMouseClicked="#closeApp" stroke="BLACK" strokeType="INSIDE" width="30.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Rectangle>
+            <Line endX="-71.99993896484375" endY="2.86102294921875E-6" layoutX="972.0" layoutY="15.0" rotate="45.0" startX="-100.0" stroke="#af0000">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Line>
+            <Line endX="-71.99993896484375" endY="2.86102294921875E-6" layoutX="972.0" layoutY="15.0" rotate="-45.0" startX="-100.0" stroke="#af0000">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Line>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="secondChildAnchor" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="900.0" styleClass="top-bar">
+         <children>
+            <ImageView fx:id="users" fitHeight="70.0" fitWidth="70.0" layoutX="774.0" onMouseClicked="#onUserClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/User_image.jpeg" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <AnchorPane fx:id="videoButton" onMouseClicked="#onVideoButtonClick" onMouseEntered="#onVideoMouseEntered" onMouseExited="#onVideoMouseExited" prefHeight="70.0" prefWidth="180.0" styleClass="changeBack">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane fx:id="liveButton" layoutX="180.0" onMouseClicked="#onLiveButtonClick" onMouseEntered="#onLiveMouseEntered" onMouseExited="#onLiveMouseExited" prefHeight="70.0" prefWidth="180.0" styleClass="changeBack">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane fx:id="homeButton" layoutX="540.0" onMouseClicked="#onHomeButtonClick" onMouseEntered="#onHomeMouseEntered" onMouseExited="#onHomeMouseExited" prefHeight="70.0" prefWidth="180.0" styleClass="changeBack">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <AnchorPane fx:id="memberButton" layoutX="360.0" onMouseClicked="#onMemberButtonClick" onMouseEntered="#onMembershipMouseEntered" onMouseExited="#onMembershipMouseExited" prefHeight="70.0" prefWidth="180.0" styleClass="changeBack">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </AnchorPane>
+            <Text fx:id="videoButtonText" layoutY="43.0" onMouseClicked="#onVideoButtonClick" onMouseEntered="#onVideoMouseEntered" onMouseExited="#onVideoMouseExited" stroke="BLACK" strokeWidth="0.0" styleClass="chooseText" text="Workout Video" textAlignment="CENTER" wrappingWidth="180.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+            <Text fx:id="liveButtonText" layoutX="180.0" layoutY="43.0" onMouseClicked="#onLiveButtonClick" onMouseEntered="#onLiveMouseEntered" onMouseExited="#onLiveMouseExited" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="chooseText" text="Live Training" textAlignment="CENTER" wrappingWidth="180.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+            <Text fx:id="memberButtonText" layoutX="360.0" layoutY="43.0" onMouseClicked="#onMemberButtonClick" onMouseEntered="#onMembershipMouseEntered" onMouseExited="#onMembershipMouseExited" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="chooseText" text="Management" textAlignment="CENTER" wrappingWidth="180.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+            <Text fx:id="homeButtonText" layoutX="540.0" layoutY="43.0" onMouseClicked="#onHomeButtonClick" onMouseEntered="#onHomeMouseEntered" onMouseExited="#onHomeMouseExited" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="chooseText" text="Home" textAlignment="CENTER" wrappingWidth="180.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="thirdChildAnchor" layoutX="1.0" layoutY="100.0" prefHeight="80.0" prefWidth="900.0">
+         <children>
+            <Text fx:id="welcome" layoutX="253.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO LONDON FITNESS GYM" textAlignment="CENTER" wrappingWidth="392.4000244140625">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="fifthChildAnchor" layoutY="300.0" prefHeight="120.0" prefWidth="900.0">
+         <children>
+            <ImageView fx:id="welcomeImage2" fitHeight="120.0" fitWidth="120.0" layoutX="160.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/video.jpg" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <Text fx:id="text2" layoutX="300.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="On London Fitness online platform, you can book live sessions performed by our excellent personal trainers. Choose your favourite trainer and start to gain more tortures!" wrappingWidth="450.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="sixthChildAnchor" layoutY="420.0" prefHeight="120.0" prefWidth="900.0">
+         <children>
+            <ImageView fx:id="welcomeImage3" fitHeight="120.0" fitWidth="120.0" layoutX="160.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/live.jpg" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <Text fx:id="text3" layoutX="300.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We have a series of dicounts activities on our platform. If you were the people who tops up at our platform at the first time, you will get much discounts! Be our premier member and start to train with our personal trainers! " wrappingWidth="450.39990234375">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="fourthChildAnchor" focusTraversable="true" layoutY="180.0" prefHeight="120.0" prefWidth="900.0">
+         <children>
+            <ImageView fx:id="welcomeImage1" fitHeight="120.0" fitWidth="120.0" layoutX="160.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/membership.jpg" />
+               </image>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </ImageView>
+            <Text fx:id="text1" layoutX="300.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="We have a bunch of training videos which can guide you through your training journey. Here are 3 main categories - strengh, yoga and hiit which are all recorded by our highly experienced trainers." wrappingWidth="450.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Text>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="500.0" fitWidth="900.0" layoutY="100.0" opacity="0.41" pickOnBounds="true">
+         <image>
+            <Image url="@../images/background.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

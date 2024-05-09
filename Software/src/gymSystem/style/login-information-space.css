@@ -1,0 +1,9 @@
+.space{
+    -fx-background-color: #e2e2e2;
+    -fx-opacity: 0.85;
+    -fx-background-radius: 4 4 4 4;
+
+}
+.board{
+    -fx-background-color: linear-gradient(from 0% 0% to 20% 20%, reflect, #ac0000, #ff0000, #ac0000);
+}

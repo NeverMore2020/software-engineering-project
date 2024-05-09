@@ -1,0 +1,338 @@
+{
+  "22": {
+    "birthday": "111",
+    "timeTableList": [
+      {
+        "timeSlotList": [
+          {
+            "duration": "9:00-10:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "10:00-11:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "15:00-16:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "16:00-17:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "18:00-19:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "19:00-20:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "20:00-21:00",
+            "bookingFlag": true
+          }
+        ]
+      },
+      {
+        "timeSlotList": [
+          {
+            "duration": "9:00-10:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "10:00-11:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "15:00-16:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "16:00-17:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "18:00-19:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "19:00-20:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "20:00-21:00",
+            "bookingFlag": true
+          }
+        ]
+      },
+      {
+        "timeSlotList": [
+          {
+            "duration": "9:00-10:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "10:00-11:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "15:00-16:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "16:00-17:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "18:00-19:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "19:00-20:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "20:00-21:00",
+            "bookingFlag": true
+          }
+        ]
+      }
+    ],
+    "seqNum": 2,
+    "bookInfoForTrainerList": [],
+    "description": "As a Strength trainer, I am good at ... I have a trainer license for teaching HIIT",
+    "membership": "premier",
+    "userName": "1234",
+    "userID": "22",
+    "realName": "Qwl We",
+    "password": "222222",
+    "tel": "12333488888",
+    "expireDate": "",
+    "email": "240409@qwe.com"
+  },
+  "33": {
+    "birthDay": "111",
+    "timeTableList": [
+      {
+        "timeSlotList": [
+          {
+            "duration": "9:00-10:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "10:00-11:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "15:00-16:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "16:00-17:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "18:00-19:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "19:00-20:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "20:00-21:00",
+            "bookingFlag": true
+          }
+        ]
+      },
+      {
+        "timeSlotList": [
+          {
+            "duration": "9:00-10:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "10:00-11:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "15:00-16:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "16:00-17:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "18:00-19:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "19:00-20:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "20:00-21:00",
+            "bookingFlag": true
+          }
+        ]
+      },
+      {
+        "timeSlotList": [
+          {
+            "duration": "9:00-10:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "10:00-11:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "15:00-16:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "16:00-17:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "18:00-19:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "19:00-20:00",
+            "bookingFlag": true
+          },
+          {
+            "duration": "20:00-21:00",
+            "bookingFlag": true
+          }
+        ]
+      }
+    ],
+    "seqNum": 3,
+    "bookInfoForTrainerList": [],
+    "description": "As a Yoga trainer, I am good at ... I have a trainer license for teaching HIIT",
+    "membership": "premier",
+    "userName": "1234",
+    "userID": "33",
+    "realName": "Gsad Qfg",
+    "password": "222222",
+    "tel": "12333488888",
+    "expireDate": "",
+    "email": "240409@qwe.com"
+  },
+  "47": {
+    "seqNum": 1,
+    "timeTableList": [
+      {
+        "timeSlotList": [
+          {
+            "bookingFlag": true,
+            "duration": "9:00-10:00"
+          },
+          {
+            "bookingFlag": true,
+            "duration": "10:00-11:00"
+          },
+          {
+            "bookingFlag": true,
+            "duration": "15:00-16:00"
+          },
+          {
+            "bookingFlag": true,
+            "duration": "16:00-17:00"
+          },
+          {
+            "bookingFlag": true,
+            "duration": "18:00-19:00"
+          },
+          {
+            "bookingFlag": true,
+            "duration": "19:00-20:00"
+          },
+          {
+            "bookingFlag": true,
+            "duration": "20:00-21:00"
+          }
+        ]
+      },
+      {
+        "timeSlotList": [
+          {
+            "bookingFlag": true,
+            "duration": "9:00-10:00"
+          },
+          {
+            "bookingFlag": true,
+            "duration": "10:00-11:00"
+          },
+          {
+            "bookingFlag": true,
+            "duration": "15:00-16:00"
+          },
+          {
+            "bookingFlag": true,
+            "duration": "16:00-17:00"
+          },
+          {
+            "bookingFlag": true,
+            "duration": "18:00-19:00"
+          },
+          {
+            "bookingFlag": true,
+            "duration": "19:00-20:00"
+          },
+          {
+            "bookingFlag": true,
+            "duration": "20:00-21:00"
+          }
+        ]
+      },
+      {
+        "timeSlotList": [
+          {
+            "bookingFlag": true,
+            "duration": "9:00-10:00"
+          },
+          {
+            "bookingFlag": true,
+            "duration": "10:00-11:00"
+          },
+          {
+            "bookingFlag": true,
+            "duration": "15:00-16:00"
+          },
+          {
+            "bookingFlag": true,
+            "duration": "16:00-17:00"
+          },
+          {
+            "bookingFlag": true,
+            "duration": "18:00-19:00"
+          },
+          {
+            "bookingFlag": true,
+            "duration": "19:00-20:00"
+          },
+          {
+            "bookingFlag": true,
+            "duration": "20:00-21:00"
+          }
+        ]
+      }
+    ],
+    "description": "As a HIIT trainer, I am good at ... I have a trainer license for teaching HIIT",
+    "bookInfoForTrainerList": [],
+    "expireDate": "",
+    "userName": "1234",
+    "password": "222222",
+    "realName": "Ere We",
+    "tel": "12333488888",
+    "email": "240409@qwe.com",
+    "userID": "47",
+    "membership": "premier",
+    "isManager": false
+  }
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="450.0" styleClass="board" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gymSystem.controller.beforeLogin.ChangePswSucceedController">
+    <children>
+        <Text fill="WHITE" layoutX="39.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You've reset password successfully!" textAlignment="CENTER">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Text>
+        <AnchorPane layoutX="50.0" layoutY="98.0" prefHeight="180.0" prefWidth="350.0" styleClass="space" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="98.0">
+            <children>
+                <Label layoutX="127.0" layoutY="31.0" styleClass="emphasize-text" text="Your ID:" AnchorPane.leftAnchor="127.0" AnchorPane.topAnchor="31.0" />
+                <Label layoutX="87.0" layoutY="82.0" styleClass="emphasize-text" text="Your Password:" AnchorPane.leftAnchor="87.0" AnchorPane.topAnchor="82.0" />
+                <Hyperlink fx:id="turnToLogin" layoutX="103.0" layoutY="124.0" onMouseClicked="#loginButtonClick" prefHeight="28.0" prefWidth="143.0" text="Click here to login in">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Hyperlink>
+                <Text fx:id="id" layoutX="186.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                <Text fx:id="psw" layoutX="186.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            </children>
+        </AnchorPane>
+      <AnchorPane layoutX="50.0" layoutY="313.0" prefHeight="50.0" prefWidth="350.0" styleClass="space" AnchorPane.topAnchor="313.0">
+            <children>
+                <Text layoutX="14.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Forgot password?" AnchorPane.leftAnchor="65.0" />
+                <Hyperlink alignment="CENTER" layoutX="175.0" layoutY="13.0" onMouseClicked="#onResetClicked" prefHeight="23.0" prefWidth="115.0" text="Click here to reset" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="13.0" />
+            </children>
+        </AnchorPane>
+    </children>
+    <stylesheets>
+        <URL value="@../style/login-information-space.css" />
+        <URL value="@../style/bold-text.css" />
+    </stylesheets>
+
+</AnchorPane>
